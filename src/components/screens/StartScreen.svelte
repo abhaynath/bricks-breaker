@@ -7,7 +7,20 @@
   };
 </script>
 
-<div>
-  <h1>Ball Breaker</h1>
+<div class="start-screen">
+  <h1>Bricks Breaker !</h1>
   <button on:click={startGame}>Start</button>
 </div>
+
+<style>
+  .start-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(63, 63, 63);
+    flex-grow: 1;
+  }
+  h1 {
+    text-align: center;
+  }
+</style>

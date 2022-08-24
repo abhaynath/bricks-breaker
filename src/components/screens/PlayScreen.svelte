@@ -21,8 +21,21 @@
   };
 </script>
 
-<h1>Play</h1>
-<h3>{currentScreen.status}</h3>
-<button on:click={pauseGame}>Pause</button>
-<button on:click={resumeGame}>Resume</button>
-<button on:click={gameOver}>Game over</button>
+<div class="play-screen">
+  <h3>{currentScreen.status}</h3>
+</div>
+<div class="toolbar">
+  <button on:click={pauseGame}>Pause</button>
+  <button on:click={resumeGame}>Resume</button>
+  <button on:click={gameOver}>Game over</button>
+</div>
+
+<style>
+  .play-screen {
+    background-color: rgb(78, 0, 102);
+  }
+  .toolbar{
+    display: flex;
+    justify-content: center;
+  }
+</style>
