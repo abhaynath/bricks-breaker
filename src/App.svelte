@@ -1,13 +1,18 @@
 <script lang="ts">
+  import type { ScreenStatus } from "./models/gameState";
  
+  import { screenStore } from "./stores/screenStore";
+
+  let currenScreen: ScreenStatus;
+  screenStore.subscribe((val: ScreenStatus) => {
+    currenScreen = val;
+  });
 </script>
 
 <div>
-  <h3>Abhay</h3>
+  <h1>{currenScreen.status}</h1>
+  <svelte:component this={currenScreen.component} />
 </div>
 
 <style>
- h3{
-  color: blueviolet;
- }
 </style>
