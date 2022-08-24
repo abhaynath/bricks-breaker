@@ -9,13 +9,14 @@
   });
 </script>
 
-<h1>{currenScreen.status}</h1>
+<!-- <h1>{currenScreen.status}</h1> -->
 <div class="container">
   <svelte:component this={currenScreen.component} />
 </div>
 
 <style>
   .container{
+    margin:10px;
     background-color: black;
     color:white;
     width:600px;

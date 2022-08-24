@@ -8,8 +8,10 @@
 </script>
 
 <div class="start-screen">
-  <h1>Bricks Breaker !</h1>
-  <button on:click={startGame}>Start</button>
+  <div class="title">Bricks Breaker !</div>
+  <div class="btn">
+    <button on:click={startGame}>Start</button>
+  </div>
 </div>
 
 <style>
@@ -19,8 +21,19 @@
     justify-content: center;
     background-color: rgb(63, 63, 63);
     flex-grow: 1;
+    background: url("../../assets/welcome.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-  h1 {
+  .title {
     text-align: center;
+    font-size: 4em;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 15px #000;
+  }
+  .btn{
+    display: flex;
+    justify-content: center;
   }
 </style>
