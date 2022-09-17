@@ -1,13 +1,13 @@
 <script lang="ts">
-  import { BrickModel } from "../../../src/models/brick";
-  import { BallModel } from "../../../src/models/ball";
-  import { GameStatus, type ScreenStatus } from "../../../src/models/gameState";
-  import { screenStore } from "../../../src/stores/screenStore";
-  import { PaddleModel } from "../../../src/models/paddle";
-  import { EnumDimensions } from "../../../src/helpers/constants";
-  import Ball from "../game-props/Ball.svelte";
-  import Brick from "../game-props/Brick.svelte";
-  import Paddle from "../game-props/Paddle.svelte";
+  import { BrickModel } from "@models/brick";
+  import { BallModel } from "@models/ball";
+  import { GameStatus, type ScreenStatus } from "@models/gameState";
+  import { screenStore } from "@stores/screenStore";
+  import { PaddleModel } from "@models/paddle";
+  import { EnumDimensions } from "@helpers/constants";
+  import Ball from "@game-props/Ball.svelte";
+  import Brick from "@game-props/Brick.svelte";
+  import Paddle from "@game-props/Paddle.svelte";
   import { onMount } from "svelte";
 
   const centerX = EnumDimensions.SCREEN_WIDTH / 2;

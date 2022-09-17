@@ -4,12 +4,12 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open",
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "test": "jest --config jestconfig.json",
-    "deploy":"npx gh-pages -d dist",
+    "deploy": "npx gh-pages -d dist",
     "docs": "typedoc --entryPointStrategy expand ./src"
   },
   "devDependencies": {
@@ -25,6 +25,7 @@
     "tslib": "^2.4.0",
     "typedoc": "^0.23.10",
     "typescript": "^4.6.4",
-    "vite": "^3.0.7"
+    "vite": "^3.0.7",
+    "vite-tsconfig-paths": "^3.5.0"
   }
 }

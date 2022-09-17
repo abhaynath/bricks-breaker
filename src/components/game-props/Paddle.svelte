@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { PaddleModel } from "../../../src/models/paddle";
+  import type { PaddleModel } from "@models/paddle";
 
   export let data: PaddleModel;
 </script>

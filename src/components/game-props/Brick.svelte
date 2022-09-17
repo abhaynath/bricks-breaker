@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { BrickModel } from "../../../src/models/brick";
+  import type { BrickModel } from "@models/brick";
 
   export let data: BrickModel;
 </script>

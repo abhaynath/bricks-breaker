@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { BallModel } from "../../../src/models/ball";
+  import type { BallModel } from "@models/ball";
 
   export let data: BallModel;
 </script>
